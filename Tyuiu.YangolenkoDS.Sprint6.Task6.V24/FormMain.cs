@@ -28,7 +28,7 @@ namespace Tyuiu.YangolenkoDS.Sprint6.Task6.V24
             openFileDialogTask_YDS.ShowDialog();
             openFilePath = openFileDialogTask_YDS.FileName;
             textBoxInput_YDS.Text = File.ReadAllText(openFilePath);
-            groupBoxOutPut_YDS.Text = groupBoxOutPut_YDS.Text + " " + openFileDialogTask_YDS.FileName;
+            groupBoxInput_YDS.Text = groupBoxInput_YDS.Text + " " + openFileDialogTask_YDS.FileName;
             buttonDone_YDS.Enabled = true;
         }
 
