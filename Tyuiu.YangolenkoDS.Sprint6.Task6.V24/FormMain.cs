@@ -21,6 +21,7 @@ namespace Tyuiu.YangolenkoDS.Sprint6.Task6.V24
             InitializeComponent();
         }
         string openFilePath;
+        string str = "s";
         DataService ds = new DataService();
 
         private void buttonOpenFile_YDS_Click(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace Tyuiu.YangolenkoDS.Sprint6.Task6.V24
 
         private void buttonDone_YDS_Click(object sender, EventArgs e)
         {
-            textBoxOutPut_YDS.Text = ds.CollectTextFromFile(openFilePath);
+            textBoxOutPut_YDS.Text = ds.CollectTextFromFile(str, openFilePath);
         }
 
         private void buttonHelp_YDS_Click(object sender, EventArgs e)
