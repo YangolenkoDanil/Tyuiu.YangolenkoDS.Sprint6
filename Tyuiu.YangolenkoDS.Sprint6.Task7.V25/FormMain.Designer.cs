@@ -31,31 +31,31 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTop_YDS = new System.Windows.Forms.Panel();
-            this.panelTop2_YDS = new System.Windows.Forms.Panel();
-            this.panelRight_YDS = new System.Windows.Forms.Panel();
-            this.panelLeft_YDS = new System.Windows.Forms.Panel();
-            this.groupBoxTask_YDS = new System.Windows.Forms.GroupBox();
-            this.groupBoxInput_YDS = new System.Windows.Forms.GroupBox();
-            this.groupBoxOutput_YDS = new System.Windows.Forms.GroupBox();
-            this.labelTask_YDS = new System.Windows.Forms.Label();
-            this.dataGridViewInput_YDS = new System.Windows.Forms.DataGridView();
-            this.dataGridViewOutput_YDS = new System.Windows.Forms.DataGridView();
-            this.openFileDialogTask_YDS = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialogMatix_YDS = new System.Windows.Forms.SaveFileDialog();
-            this.toolTipButton_YDS = new System.Windows.Forms.ToolTip(this.components);
             this.buttonSaveFile_YDS = new System.Windows.Forms.Button();
             this.buttonHelp_YDS = new System.Windows.Forms.Button();
             this.buttonDone_YDS = new System.Windows.Forms.Button();
             this.buttonOpenFile_YDS = new System.Windows.Forms.Button();
+            this.panelTop2_YDS = new System.Windows.Forms.Panel();
+            this.groupBoxTask_YDS = new System.Windows.Forms.GroupBox();
+            this.labelTask_YDS = new System.Windows.Forms.Label();
+            this.panelRight_YDS = new System.Windows.Forms.Panel();
+            this.groupBoxOutput_YDS = new System.Windows.Forms.GroupBox();
+            this.dataGridViewOutput_YDS = new System.Windows.Forms.DataGridView();
+            this.panelLeft_YDS = new System.Windows.Forms.Panel();
+            this.groupBoxInput_YDS = new System.Windows.Forms.GroupBox();
+            this.dataGridViewInput_YDS = new System.Windows.Forms.DataGridView();
+            this.openFileDialogTask_YDS = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialogMatix_YDS = new System.Windows.Forms.SaveFileDialog();
+            this.toolTipButton_YDS = new System.Windows.Forms.ToolTip(this.components);
             this.panelTop_YDS.SuspendLayout();
             this.panelTop2_YDS.SuspendLayout();
-            this.panelRight_YDS.SuspendLayout();
-            this.panelLeft_YDS.SuspendLayout();
             this.groupBoxTask_YDS.SuspendLayout();
-            this.groupBoxInput_YDS.SuspendLayout();
+            this.panelRight_YDS.SuspendLayout();
             this.groupBoxOutput_YDS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput_YDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutput_YDS)).BeginInit();
+            this.panelLeft_YDS.SuspendLayout();
+            this.groupBoxInput_YDS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput_YDS)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop_YDS
@@ -70,107 +70,6 @@
             this.panelTop_YDS.Size = new System.Drawing.Size(893, 100);
             this.panelTop_YDS.TabIndex = 0;
             // 
-            // panelTop2_YDS
-            // 
-            this.panelTop2_YDS.Controls.Add(this.groupBoxTask_YDS);
-            this.panelTop2_YDS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop2_YDS.Location = new System.Drawing.Point(0, 100);
-            this.panelTop2_YDS.Name = "panelTop2_YDS";
-            this.panelTop2_YDS.Size = new System.Drawing.Size(893, 100);
-            this.panelTop2_YDS.TabIndex = 1;
-            // 
-            // panelRight_YDS
-            // 
-            this.panelRight_YDS.Controls.Add(this.groupBoxOutput_YDS);
-            this.panelRight_YDS.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight_YDS.Location = new System.Drawing.Point(509, 200);
-            this.panelRight_YDS.Name = "panelRight_YDS";
-            this.panelRight_YDS.Size = new System.Drawing.Size(384, 390);
-            this.panelRight_YDS.TabIndex = 1;
-            // 
-            // panelLeft_YDS
-            // 
-            this.panelLeft_YDS.Controls.Add(this.groupBoxInput_YDS);
-            this.panelLeft_YDS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_YDS.Location = new System.Drawing.Point(0, 200);
-            this.panelLeft_YDS.Name = "panelLeft_YDS";
-            this.panelLeft_YDS.Size = new System.Drawing.Size(494, 390);
-            this.panelLeft_YDS.TabIndex = 2;
-            // 
-            // groupBoxTask_YDS
-            // 
-            this.groupBoxTask_YDS.Controls.Add(this.labelTask_YDS);
-            this.groupBoxTask_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxTask_YDS.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxTask_YDS.Name = "groupBoxTask_YDS";
-            this.groupBoxTask_YDS.Size = new System.Drawing.Size(893, 100);
-            this.groupBoxTask_YDS.TabIndex = 0;
-            this.groupBoxTask_YDS.TabStop = false;
-            this.groupBoxTask_YDS.Text = "Условие:";
-            // 
-            // groupBoxInput_YDS
-            // 
-            this.groupBoxInput_YDS.Controls.Add(this.dataGridViewInput_YDS);
-            this.groupBoxInput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxInput_YDS.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxInput_YDS.Name = "groupBoxInput_YDS";
-            this.groupBoxInput_YDS.Size = new System.Drawing.Size(494, 390);
-            this.groupBoxInput_YDS.TabIndex = 0;
-            this.groupBoxInput_YDS.TabStop = false;
-            this.groupBoxInput_YDS.Text = "Ввод:";
-            this.groupBoxInput_YDS.Enter += new System.EventHandler(this.groupBoxInput_YDS_Enter);
-            // 
-            // groupBoxOutput_YDS
-            // 
-            this.groupBoxOutput_YDS.Controls.Add(this.dataGridViewOutput_YDS);
-            this.groupBoxOutput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxOutput_YDS.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxOutput_YDS.Name = "groupBoxOutput_YDS";
-            this.groupBoxOutput_YDS.Size = new System.Drawing.Size(384, 390);
-            this.groupBoxOutput_YDS.TabIndex = 1;
-            this.groupBoxOutput_YDS.TabStop = false;
-            this.groupBoxOutput_YDS.Text = "Вывод:";
-            // 
-            // labelTask_YDS
-            // 
-            this.labelTask_YDS.AutoSize = true;
-            this.labelTask_YDS.Location = new System.Drawing.Point(4, 22);
-            this.labelTask_YDS.Name = "labelTask_YDS";
-            this.labelTask_YDS.Size = new System.Drawing.Size(774, 48);
-            this.labelTask_YDS.TabIndex = 0;
-            this.labelTask_YDS.Text = resources.GetString("labelTask_YDS.Text");
-            // 
-            // dataGridViewInput_YDS
-            // 
-            this.dataGridViewInput_YDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInput_YDS.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewInput_YDS.Name = "dataGridViewInput_YDS";
-            this.dataGridViewInput_YDS.RowHeadersWidth = 51;
-            this.dataGridViewInput_YDS.RowTemplate.Height = 24;
-            this.dataGridViewInput_YDS.Size = new System.Drawing.Size(488, 369);
-            this.dataGridViewInput_YDS.TabIndex = 0;
-            // 
-            // dataGridViewOutput_YDS
-            // 
-            this.dataGridViewOutput_YDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewOutput_YDS.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewOutput_YDS.Name = "dataGridViewOutput_YDS";
-            this.dataGridViewOutput_YDS.RowHeadersWidth = 51;
-            this.dataGridViewOutput_YDS.RowTemplate.Height = 24;
-            this.dataGridViewOutput_YDS.Size = new System.Drawing.Size(378, 369);
-            this.dataGridViewOutput_YDS.TabIndex = 1;
-            // 
-            // openFileDialogTask_YDS
-            // 
-            this.openFileDialogTask_YDS.FileName = "openFileDialog1";
-            // 
-            // toolTipButton_YDS
-            // 
-            this.toolTipButton_YDS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipButton_YDS.ToolTipTitle = "Подсказка";
-            // 
             // buttonSaveFile_YDS
             // 
             this.buttonSaveFile_YDS.Image = global::Tyuiu.YangolenkoDS.Sprint6.Task7.V25.Properties.Resources.page_save;
@@ -184,6 +83,7 @@
             // 
             // buttonHelp_YDS
             // 
+            this.buttonHelp_YDS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonHelp_YDS.Image = global::Tyuiu.YangolenkoDS.Sprint6.Task7.V25.Properties.Resources.help;
             this.buttonHelp_YDS.Location = new System.Drawing.Point(797, 12);
             this.buttonHelp_YDS.Name = "buttonHelp_YDS";
@@ -215,13 +115,114 @@
             this.buttonOpenFile_YDS.UseVisualStyleBackColor = true;
             this.buttonOpenFile_YDS.Click += new System.EventHandler(this.buttonOpenFile_YDS_Click);
             // 
+            // panelTop2_YDS
+            // 
+            this.panelTop2_YDS.Controls.Add(this.groupBoxTask_YDS);
+            this.panelTop2_YDS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop2_YDS.Location = new System.Drawing.Point(0, 100);
+            this.panelTop2_YDS.Name = "panelTop2_YDS";
+            this.panelTop2_YDS.Size = new System.Drawing.Size(893, 100);
+            this.panelTop2_YDS.TabIndex = 1;
+            // 
+            // groupBoxTask_YDS
+            // 
+            this.groupBoxTask_YDS.Controls.Add(this.labelTask_YDS);
+            this.groupBoxTask_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxTask_YDS.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxTask_YDS.Name = "groupBoxTask_YDS";
+            this.groupBoxTask_YDS.Size = new System.Drawing.Size(893, 100);
+            this.groupBoxTask_YDS.TabIndex = 0;
+            this.groupBoxTask_YDS.TabStop = false;
+            this.groupBoxTask_YDS.Text = "Условие:";
+            // 
+            // labelTask_YDS
+            // 
+            this.labelTask_YDS.AutoSize = true;
+            this.labelTask_YDS.Location = new System.Drawing.Point(4, 22);
+            this.labelTask_YDS.Name = "labelTask_YDS";
+            this.labelTask_YDS.Size = new System.Drawing.Size(774, 48);
+            this.labelTask_YDS.TabIndex = 0;
+            this.labelTask_YDS.Text = resources.GetString("labelTask_YDS.Text");
+            // 
+            // panelRight_YDS
+            // 
+            this.panelRight_YDS.Controls.Add(this.groupBoxOutput_YDS);
+            this.panelRight_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRight_YDS.Location = new System.Drawing.Point(494, 200);
+            this.panelRight_YDS.Name = "panelRight_YDS";
+            this.panelRight_YDS.Size = new System.Drawing.Size(399, 390);
+            this.panelRight_YDS.TabIndex = 1;
+            // 
+            // groupBoxOutput_YDS
+            // 
+            this.groupBoxOutput_YDS.Controls.Add(this.dataGridViewOutput_YDS);
+            this.groupBoxOutput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxOutput_YDS.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxOutput_YDS.Name = "groupBoxOutput_YDS";
+            this.groupBoxOutput_YDS.Size = new System.Drawing.Size(399, 390);
+            this.groupBoxOutput_YDS.TabIndex = 1;
+            this.groupBoxOutput_YDS.TabStop = false;
+            this.groupBoxOutput_YDS.Text = "Вывод:";
+            // 
+            // dataGridViewOutput_YDS
+            // 
+            this.dataGridViewOutput_YDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewOutput_YDS.Location = new System.Drawing.Point(3, 18);
+            this.dataGridViewOutput_YDS.Name = "dataGridViewOutput_YDS";
+            this.dataGridViewOutput_YDS.RowHeadersWidth = 51;
+            this.dataGridViewOutput_YDS.RowTemplate.Height = 24;
+            this.dataGridViewOutput_YDS.Size = new System.Drawing.Size(393, 369);
+            this.dataGridViewOutput_YDS.TabIndex = 1;
+            // 
+            // panelLeft_YDS
+            // 
+            this.panelLeft_YDS.Controls.Add(this.groupBoxInput_YDS);
+            this.panelLeft_YDS.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_YDS.Location = new System.Drawing.Point(0, 200);
+            this.panelLeft_YDS.Name = "panelLeft_YDS";
+            this.panelLeft_YDS.Size = new System.Drawing.Size(494, 390);
+            this.panelLeft_YDS.TabIndex = 2;
+            // 
+            // groupBoxInput_YDS
+            // 
+            this.groupBoxInput_YDS.Controls.Add(this.dataGridViewInput_YDS);
+            this.groupBoxInput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxInput_YDS.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxInput_YDS.Name = "groupBoxInput_YDS";
+            this.groupBoxInput_YDS.Size = new System.Drawing.Size(494, 390);
+            this.groupBoxInput_YDS.TabIndex = 0;
+            this.groupBoxInput_YDS.TabStop = false;
+            this.groupBoxInput_YDS.Text = "Ввод:";
+            this.groupBoxInput_YDS.Enter += new System.EventHandler(this.groupBoxInput_YDS_Enter);
+            // 
+            // dataGridViewInput_YDS
+            // 
+            this.dataGridViewInput_YDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInput_YDS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInput_YDS.Location = new System.Drawing.Point(3, 18);
+            this.dataGridViewInput_YDS.Name = "dataGridViewInput_YDS";
+            this.dataGridViewInput_YDS.RowHeadersWidth = 51;
+            this.dataGridViewInput_YDS.RowTemplate.Height = 24;
+            this.dataGridViewInput_YDS.Size = new System.Drawing.Size(488, 369);
+            this.dataGridViewInput_YDS.TabIndex = 0;
+            // 
+            // openFileDialogTask_YDS
+            // 
+            this.openFileDialogTask_YDS.FileName = "openFileDialog1";
+            // 
+            // toolTipButton_YDS
+            // 
+            this.toolTipButton_YDS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipButton_YDS.ToolTipTitle = "Подсказка";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 590);
-            this.Controls.Add(this.panelLeft_YDS);
             this.Controls.Add(this.panelRight_YDS);
+            this.Controls.Add(this.panelLeft_YDS);
             this.Controls.Add(this.panelTop2_YDS);
             this.Controls.Add(this.panelTop_YDS);
             this.MinimumSize = new System.Drawing.Size(911, 565);
@@ -231,14 +232,14 @@
             this.Load += new System.EventHandler(this.File_Load_YDS);
             this.panelTop_YDS.ResumeLayout(false);
             this.panelTop2_YDS.ResumeLayout(false);
-            this.panelRight_YDS.ResumeLayout(false);
-            this.panelLeft_YDS.ResumeLayout(false);
             this.groupBoxTask_YDS.ResumeLayout(false);
             this.groupBoxTask_YDS.PerformLayout();
-            this.groupBoxInput_YDS.ResumeLayout(false);
+            this.panelRight_YDS.ResumeLayout(false);
             this.groupBoxOutput_YDS.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput_YDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutput_YDS)).EndInit();
+            this.panelLeft_YDS.ResumeLayout(false);
+            this.groupBoxInput_YDS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput_YDS)).EndInit();
             this.ResumeLayout(false);
 
         }

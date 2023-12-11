@@ -27,7 +27,7 @@ namespace Tyuiu.YangolenkoDS.Sprint6.Task6.V24
         {
             openFileDialogTask_YDS.ShowDialog();
             openFilePath = openFileDialogTask_YDS.FileName;
-            textBoxInput_YDS.Text = File.ReadAllText(openFilePath);
+            textBoxInPut_YDS.Text = File.ReadAllText(openFilePath);
             groupBoxInput_YDS.Text = groupBoxInput_YDS.Text + " " + openFileDialogTask_YDS.FileName;
             buttonDone_YDS.Enabled = true;
         }
@@ -41,6 +41,11 @@ namespace Tyuiu.YangolenkoDS.Sprint6.Task6.V24
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
+        }
+
+        private void textBoxInput_YDS_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
